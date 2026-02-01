@@ -20,7 +20,7 @@ An automated NGS analysis pipeline that runs end-to-end from FASTQ to results.
 ---
 ### ▶️ Pipeline Web Interface Demo
 
-[![Web Interface Demo]
+ End 2 END Nextflow Pipeline Web Interface (Dummy) ![alt text](END_2_END_nfNGS-1.gif)
 
 *Demo video showing the web interface workflow (UI template with dummy data).*
 
