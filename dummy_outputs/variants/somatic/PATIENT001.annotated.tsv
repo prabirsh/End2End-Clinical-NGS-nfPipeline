@@ -1,5 +1,0 @@
-Gene	Chr	Position	Ref	Alt	VAF	Depth	Quality	Type	COSMIC_ID	OncoKB	Tier	Therapeutic_Implications
-KRAS	chr12	25398284	C	A	0.127	300	234.88	SNV	COSM6252	Oncogenic	1	FDA-approved: Cetuximab resistance
-EGFR	chr7	55259515	T	G	0.089	250	125.67	SNV	COSM12345	Likely_Oncogenic	2	Clinical trial: Osimertinib
-TP53	chr17	7579472	G	A	0.095	220	189.45	SNV	COSM43854	Oncogenic	3A	Prognostic marker
-BRAF	chr7	140453136	A	T	0.061	180	98.23	SNV	COSM476	Oncogenic	1	FDA-approved: Vemurafenib
