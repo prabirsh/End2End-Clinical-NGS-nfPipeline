@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **Maintained by: Prabir**
-## 🎯 What This Pipeline Does
+##  What This Pipeline Does
 
 An automated NGS analysis pipeline that runs end-to-end from FASTQ to results.
 
@@ -87,7 +87,7 @@ An automated NGS analysis pipeline that runs end-to-end from FASTQ to results.
 ---
 
 
-## 🚀 Quick Start
+## Quick Start
 
 ## Installation
 
