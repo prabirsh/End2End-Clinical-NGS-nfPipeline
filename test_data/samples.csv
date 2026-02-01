@@ -1,0 +1,4 @@
+sample_id,patient_id,sample_type,fastq_1,fastq_2
+SAMPLE001,PAT001,germline,test_data/SAMPLE001_R1.fastq.gz,test_data/SAMPLE001_R2.fastq.gz
+PATIENT001_tumor,PATIENT001,tumor,test_data/PATIENT001_tumor_R1.fastq.gz,test_data/PATIENT001_tumor_R2.fastq.gz
+PATIENT001_normal,PATIENT001,normal,test_data/PATIENT001_normal_R1.fastq.gz,test_data/PATIENT001_normal_R2.fastq.gz

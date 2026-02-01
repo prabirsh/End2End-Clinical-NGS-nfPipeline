@@ -1,0 +1,15 @@
+{
+  "sample_id": "SAMPLE001",
+  "total_reads": 25000000,
+  "mapped_reads": 24500000,
+  "mapping_rate": 98.0,
+  "properly_paired": 24000000,
+  "properly_paired_rate": 96.0,
+  "duplicates": 3500000,
+  "duplication_rate": 14.0,
+  "average_insert_size": 350,
+  "average_coverage": 185.5,
+  "median_coverage": 182,
+  "mean_mapping_quality": 58.3,
+  "timestamp": "2026-02-01 09:10:07.676671"
+}

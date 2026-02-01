@@ -1,0 +1,25 @@
+{
+  "sample_id": "SAMPLE001",
+  "total_sequences": 25000000,
+  "sequences_flagged_as_poor_quality": 125000,
+  "sequence_length": "150",
+  "percent_gc": 52,
+  "total_deduplicated_percentage": 85.3,
+  "overrepresented_sequences": [],
+  "adapter_content": "Low",
+  "per_base_quality": {
+    "status": "PASS",
+    "mean_quality": 36.8
+  },
+  "per_sequence_quality": {
+    "status": "PASS"
+  },
+  "per_base_n_content": {
+    "status": "PASS"
+  },
+  "sequence_duplication_levels": {
+    "status": "WARN",
+    "total_deduplicated_percentage": 85.3
+  },
+  "timestamp": "2026-02-01 09:10:07.676200"
+}

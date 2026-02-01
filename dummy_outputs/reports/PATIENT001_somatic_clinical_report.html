@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Somatic Variant Report - PATIENT001</title>
+    <style>
+        @media print { .no-print { display: none; } }
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; padding: 0; background: #f8f9fa; }
+        .header { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 30px; text-align: center; }
+        .header h1 { margin: 0; font-size: 28px; font-weight: 300; }
+        .header .subtitle { margin-top: 10px; opacity: 0.9; font-size: 14px; }
+        .container { max-width: 900px; margin: 20px auto; background: white; padding: 40px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
+        .section { margin: 30px 0; padding: 20px; border-left: 4px solid #f5576c; background: #f8f9fa; }
+        .section h2 { margin-top: 0; color: #2d3748; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #e2e8f0; }
+        th { background: #edf2f7; font-weight: 600; color: #2d3748; }
+        .tier1 { background: #fed7d7; color: #9b2c2c; padding: 3px 8px; border-radius: 4px; font-weight: 600; }
+        .tier2 { background: #feebc8; color: #7c2d12; padding: 3px 8px; border-radius: 4px; font-weight: 600; }
+        .tier3 { background: #e6fffa; color: #234e52; padding: 3px 8px; border-radius: 4px; font-weight: 600; }
+        .actionable { background: #10b981; color: white; padding: 3px 8px; border-radius: 4px; font-weight: 600; }
+        .gene { font-weight: 700; color: #e11d48; }
+        .warning-box { background: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 20px 0; }
+        .therapy-box { background: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 20px 0; }
+        .footer { margin-top: 40px; padding-top: 20px; border-top: 2px solid #e2e8f0; color: #718096; font-size: 12px; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎯 SOMATIC MUTATION ANALYSIS REPORT</h1>
+        <div class="subtitle">Precision Oncology Genomics</div>
+    </div>
+    
+    <div class="container">
+        <div class="section">
+            <h2>Patient Information</h2>
+            <table>
+                <tr><th>Patient ID</th><td>PATIENT001</td></tr>
+                <tr><th>Sample Type</th><td>Tumor (FFPE) + Matched Normal (Blood)</td></tr>
+                <tr><th>Tumor Purity</th><td>65% (estimated)</td></tr>
+                <tr><th>Panel</th><td>Comprehensive Cancer Panel (468 genes)</td></tr>
+                <tr><th>Analysis Type</th><td>Somatic Paired (Tumor-Normal)</td></tr>
+                <tr><th>Report Date</th><td>February 1, 2026</td></tr>
+                <tr><th>Pathologist</th><td>Dr. Jane Smith, MD</td></tr>
+                <tr><th>Analyst</th><td>Prabir Kumar | Clinical Bioinformatician</td></tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>Tumor Quality Metrics</h2>
+            <table>
+                <tr>
+                    <th>Metric</th>
+                    <th>Tumor</th>
+                    <th>Normal</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Mean Target Coverage</td>
+                    <td>450x</td>
+                    <td>220x</td>
+                    <td>✅ PASS</td>
+                </tr>
+                <tr>
+                    <td>% Targets at 100x</td>
+                    <td>99.2%</td>
+                    <td>98.7%</td>
+                    <td>✅ PASS</td>
+                </tr>
+                <tr>
+                    <td>Tumor Purity (estimated)</td>
+                    <td>65%</td>
+                    <td>N/A</td>
+                    <td>✅ ADEQUATE</td>
+                </tr>
+                <tr>
+                    <td>TMB (Tumor Mutational Burden)</td>
+                    <td>8.5 mut/Mb</td>
+                    <td>N/A</td>
+                    <td>⚠️ Intermediate</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="therapy-box">
+            <h3>🎯 ACTIONABLE VARIANTS WITH FDA-APPROVED THERAPIES</h3>
+        </div>
+        
+        <div class="section">
+            <h2>Tier 1: Clinically Actionable Variants</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Gene</th>
+                        <th>Variant</th>
+                        <th>VAF</th>
+                        <th>Tier</th>
+                        <th>Therapy</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="gene">EGFR</span></td>
+                        <td>p.L858R (c.2573T>G)</td>
+                        <td>42.3%</td>
+                        <td><span class="tier1">TIER 1A</span></td>
+                        <td><span class="actionable">Osimertinib, Erlotinib</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="gene">BRAF</span></td>
+                        <td>p.V600E (c.1799T>A)</td>
+                        <td>38.7%</td>
+                        <td><span class="tier1">TIER 1A</span></td>
+                        <td><span class="actionable">Dabrafenib + Trametinib</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="gene">PIK3CA</span></td>
+                        <td>p.H1047R (c.3140A>G)</td>
+                        <td>34.5%</td>
+                        <td><span class="tier1">TIER 1A</span></td>
+                        <td><span class="actionable">Alpelisib (HR+ breast)</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="therapy-box">
+                <strong>Clinical Recommendations:</strong><br><br>
+                
+                <strong>EGFR L858R:</strong> This variant is a well-established activating mutation in EGFR. FDA-approved therapies include 
+                first-line osimertinib (TAGRISSO®) or erlotinib. Response rate: 60-70%. Consider testing for T790M at progression.<br><br>
+                
+                <strong>BRAF V600E:</strong> Hotspot mutation conferring sensitivity to BRAF inhibitors. Combination therapy with dabrafenib 
+                (BRAF inhibitor) + trametinib (MEK inhibitor) recommended per NCCN guidelines. Response rate: 64%.<br><br>
+                
+                <strong>PIK3CA H1047R:</strong> Gain-of-function mutation in the kinase domain. Alpelisib approved for HR+/HER2- advanced 
+                breast cancer with PIK3CA mutation. Consider in combination with endocrine therapy.
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Tier 2: Potentially Actionable Variants</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Gene</th>
+                        <th>Variant</th>
+                        <th>VAF</th>
+                        <th>Clinical Significance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="gene">TP53</span></td>
+                        <td>p.R273H (c.818G>A)</td>
+                        <td>51.2%</td>
+                        <td>Poor prognosis marker; investigational therapies available</td>
+                    </tr>
+                    <tr>
+                        <td><span class="gene">KRAS</span></td>
+                        <td>p.G12D (c.35G>A)</td>
+                        <td>45.8%</td>
+                        <td>Resistance to anti-EGFR therapy; KRAS G12C inhibitors in trials</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>Microsatellite Instability (MSI) Status</h2>
+            <table>
+                <tr>
+                    <th>MSI Status</th>
+                    <td>MSS (Microsatellite Stable)</td>
+                </tr>
+                <tr>
+                    <th>Interpretation</th>
+                    <td>Tumor is microsatellite stable. Standard chemotherapy recommended.</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>Tumor Mutational Burden (TMB)</h2>
+            <table>
+                <tr>
+                    <th>TMB Score</th>
+                    <td>8.5 mutations/Mb</td>
+                </tr>
+                <tr>
+                    <th>Classification</th>
+                    <td>Intermediate (5-10 mut/Mb)</td>
+                </tr>
+                <tr>
+                    <th>Immunotherapy</th>
+                    <td>Consider PD-1/PD-L1 inhibitors in appropriate clinical context</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>Copy Number Alterations</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Gene</th>
+                        <th>Alteration</th>
+                        <th>Copy Number</th>
+                        <th>Significance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="gene">ERBB2 (HER2)</span></td>
+                        <td>Amplification</td>
+                        <td>7 copies</td>
+                        <td>Candidate for HER2-targeted therapy (Trastuzumab)</td>
+                    </tr>
+                    <tr>
+                        <td><span class="gene">CDKN2A</span></td>
+                        <td>Homozygous Deletion</td>
+                        <td>0 copies</td>
+                        <td>Loss of tumor suppressor; CDK4/6 inhibitor candidate</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>Clinical Trial Matching</h2>
+            <p>Based on the genomic profile, this patient may be eligible for the following clinical trials:</p>
+            <ul>
+                <li><strong>NCT04805983:</strong> EGFR L858R-specific novel TKI (Phase II)</li>
+                <li><strong>NCT03334617:</strong> BRAF/MEK inhibitor combination in solid tumors</li>
+                <li><strong>NCT04208178:</strong> PIK3CA inhibitor + immunotherapy combination</li>
+            </ul>
+        </div>
+        
+        <div class="warning-box">
+            <strong>⚠️ Important Notes:</strong>
+            <ul style="margin: 10px 0 0 20px; padding: 0;">
+                <li>All therapeutic recommendations should be evaluated in the context of tumor histology, stage, and patient performance status</li>
+                <li>Drug resistance mechanisms may emerge; serial monitoring recommended</li>
+                <li>Some therapies are approved only for specific cancer types</li>
+                <li>Consider enrollment in clinical trials for investigational agents</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul>
+                <li>Reference Genome: GRCh38/hg38</li>
+                <li>Variant Caller: GATK Mutect2 v4.5.0.0 (Somatic Mode)</li>
+                <li>Panel of Normals: 40 matched normal samples</li>
+                <li>Minimum VAF for reporting: 5% (targeted regions)</li>
+                <li>Annotation: VEP v110, ClinVar, COSMIC v98, OncoKB</li>
+                <li>Clinical evidence: FDA labels, NCCN guidelines, OncoKB levels 1-4</li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <p><strong>Clinical NGS Pipeline v2.0 - Somatic Analysis</strong></p>
+            <p>Maintained by Prabir Kumar | Clinical Bioinformatics</p>
+            <p>For clinical interpretation questions: oncology.genomics@example.org</p>
+            <p style="margin-top: 15px; font-size: 10px;">
+                This test was performed in a CLIA-certified/CAP-accredited laboratory. Results should be interpreted 
+                by a qualified oncologist in conjunction with clinical, pathological, and radiological findings.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

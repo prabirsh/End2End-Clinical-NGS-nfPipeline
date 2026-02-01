@@ -1,0 +1,41 @@
+name: ngs-pipeline
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  # Core tools
+  - python=3.10
+  - nextflow>=22.10.0
+  
+  # Alignment and preprocessing
+  - bwa=0.7.17
+  - samtools=1.17
+  - picard=3.0.0
+  
+  # Variant calling
+  - gatk4=4.5.0.0
+  
+  # Quality control
+  - fastqc=0.12.1
+  - multiqc=1.14
+  
+  # Annotation
+  - ensembl-vep=110.1
+  - bcftools=1.17
+  
+  # Python packages
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - pyyaml
+  - flask
+  - flask-cors
+  
+  # Utilities
+  - bedtools=2.30.0
+  - htslib=1.17
+  - tabix=1.11
+
+# Maintained by: Prabir

@@ -1,0 +1,5 @@
+Gene	Chr	Position	Ref	Alt	VAF	Depth	Quality	Type	ClinVar	gnomAD_AF	ACMG_Class	Clinical_Significance
+BRCA1	chr17	41197819	G	A	0.511	180	2341.88	SNV	Pathogenic	0.000012	Pathogenic	HIGH - Breast/Ovarian Cancer Risk
+BRCA2	chr13	32890620	C	T	0.503	165	1876.23	SNV	Likely_Pathogenic	0.000008	Likely_Pathogenic	HIGH - Breast/Ovarian Cancer Risk
+TP53	chr17	7577538	C	T	0.498	150	1542.77	SNV	Pathogenic	0.000001	Pathogenic	HIGH - Li-Fraumeni Syndrome
+ATM	chr11	108236235	G	A	0.489	95	987.45	SNV	VUS	0.000345	VUS	MODERATE - Uncertain Significance
