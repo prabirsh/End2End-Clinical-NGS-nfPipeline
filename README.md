@@ -174,7 +174,7 @@ nextflow run main.nf \
 
 ---
 
-### Navigation
+### Navigation of Web interface with dummy data
 
 **Dashboard**
 - View pipeline statistics
