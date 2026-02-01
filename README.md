@@ -174,7 +174,7 @@ nextflow run main.nf \
 
 ---
 
-### 5.2 Navigation
+### Navigation
 
 **Dashboard**
 - View pipeline statistics
@@ -201,7 +201,7 @@ nextflow run main.nf \
 - In-browser documentation
 - Quick reference guide
 
-### 5.3 Running an Analysis
+### Running an Analysis
 
 1. Click **"New Analysis"** in sidebar
 2. Select analysis type from dropdown
@@ -212,7 +212,7 @@ nextflow run main.nf \
 7. Click **"Start Pipeline"**
 8. Switch to **"Logs"** tab to monitor progress
 
-### 5.4 Viewing Results
+### Viewing Results
 
 1. Navigate to **"Results"** tab
 2. Click **"View Report"** for any completed sample
@@ -221,15 +221,15 @@ nextflow run main.nf \
 
 ---
 
-## 6. Command Line Usage
+## Command Line Usage
 
-### 6.1 Basic Syntax
+### Basic Syntax
 
 ```bash
 nextflow run main.nf [OPTIONS]
 ```
 
-### 6.2 Required Parameters
+### Required Parameters
 
 | Parameter | Description | Example |
 |-----------|-------------|---------|
@@ -238,7 +238,7 @@ nextflow run main.nf [OPTIONS]
 | `--reference_genome` | Reference FASTA file | `GRCh38.fa` |
 | `--target_bed` | Target regions BED file | `targets.bed` |
 
-### 6.3 Optional Parameters
+### Optional Parameters
 
 | Parameter | Description | Default |
 |-----------|-------------|---------|
