@@ -260,4 +260,4 @@ For issues, questions, or feature requests:
 ---
 
 **Last Updated**: February 2026  
-**Version**: 2.0
+**Version**: 1.0.0
